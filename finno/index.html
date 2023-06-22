@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Temperatur</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="finno.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator 
+       <br>
+        Temperatur</h1>
+
+    <div class="calculator">
+      <form id="temperatureForm">
+        <div class="form-group">
+          <label for="temperature">Masukan Temperatur:</label>
+          <input type="number" id="temperature" name="temperature" required>
+        </div>
+        <!-- Untuk Tampilan Kalkulator Temperatur-->
+        <div class="form-group">
+          <label for="scale">Pilih Skala:</label>
+          <select id="scale" name="scale">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+          </select>
+        </div>
+
+        <button type="submit">Convert</button>
+      </form>
+
+      <div id="result" class="result-container">
+        <p id="conversionResult"></p>
+        <p id="conversionExplanation"></p>
+      </div>
+    </div>
+  </div>
+        <!-- Hasil dan penjelasan konversi Temperatur-->
+  <script src="finno.js"></script>
+</body>
+</html>
